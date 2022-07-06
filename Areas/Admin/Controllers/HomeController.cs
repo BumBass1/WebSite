@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebSite11.Domain;
 
-namespace WebSite11.Controllers
+namespace WebSite11.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class HomeController : Controller
     {
         private readonly DataManager dataManager;
@@ -17,15 +18,7 @@ namespace WebSite11.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            return View(dataManager.ServiceItems.GetServiceItems());
         }
-        //dataManager.TextFields.GetTextFieldByCodeWord("PageIndex")
-        //(SqlException: Invalid column name 'TitleImagePath'.)
-
-        public IActionResult Contacts()
-        {
-            return View(dataManager.TextFields.GetTextFieldByCodeWord("PageContacts"));
-        }
-
     }
 }

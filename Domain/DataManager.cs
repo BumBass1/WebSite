@@ -12,9 +12,9 @@ namespace WebSite11.Domain
         public ITextFieldsRepository TextFields { get; set; }
         public IServiceItemsRepository ServiceItems { get; set; }
 
-        public DataManager(ITextFieldsRepository textFieldRepository, IServiceItemsRepository serviceItemsRepository)
+        public DataManager(ITextFieldsRepository textFieldsRepository, IServiceItemsRepository serviceItemsRepository)
         {
-            TextFields = textFieldRepository;
+            TextFields = textFieldsRepository;
             ServiceItems = serviceItemsRepository;
         }
     }

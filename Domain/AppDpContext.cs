@@ -23,14 +23,14 @@ namespace WebSite11.Domain
             modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole  //роль
             {
                 Id = "6FF66B6D-FDEC-4825-A115-56836471C40F",
-                Name = "Admin",
+                Name = "admin",
                 NormalizedName = "ADMIN"
             });
 
             modelBuilder.Entity<IdentityUser>().HasData(new IdentityUser // юзер админ
             {
                 Id = "D25C0E94-A64A-4537-B56E-8840E806F971",
-                UserName = "Admin",
+                UserName = "admin",
                 NormalizedUserName = "ADMIN",
                 Email = "denis_loko@mail.ru",
                 NormalizedEmail = "DENIS_LOKO@MAIL.RU",
@@ -45,8 +45,7 @@ namespace WebSite11.Domain
                 UserId = "D25C0E94-A64A-4537-B56E-8840E806F971"
             });
 
-            modelBuilder.Entity<TextField>().HasData(new TextField
-            {
+            modelBuilder.Entity<TextField>().HasData(new TextField {
                 Id = new Guid("D64793A6-40BA-4D23-A1C3-2EA4761B8FE3"),
                 CodeWord = "PageIndex",
                 Title = "Главная"

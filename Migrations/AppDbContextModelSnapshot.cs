@@ -50,7 +50,7 @@ namespace WebSite11.Migrations
                         {
                             Id = "6FF66B6D-FDEC-4825-A115-56836471C40F",
                             ConcurrencyStamp = "c0ee24e7-78aa-4bb9-9c0a-daecce20ec20",
-                            Name = "Admin",
+                            Name = "admin",
                             NormalizedName = "ADMIN"
                         });
                 });
@@ -158,7 +158,7 @@ namespace WebSite11.Migrations
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
-                            UserName = "Admin"
+                            UserName = "admin"
                         });
                 });
 

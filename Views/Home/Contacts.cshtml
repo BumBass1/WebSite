@@ -1,13 +1,4 @@
-﻿<div>
-    <h1>
-        Это главная страница
-    </h1>
-</div>
-
-
-
-
-@*@model TextField
+﻿@model TextField
 @{
     ViewBag.Title = Model.MetaTitle;
     ViewBag.Description = Model.MetaDescription;
@@ -16,4 +7,4 @@
 
 <div>
     @Html.Raw(Model.Text)
-</div>*@
+</div>

@@ -194,12 +194,12 @@ namespace WebSite11.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "6FF66B6D-FDEC-4825-A115-56836471C40F", "588299b7-e873-4ecc-901a-531e96ed3291", "Admin", "ADMIN" });
+                values: new object[] { "6FF66B6D-FDEC-4825-A115-56836471C40F", "588299b7-e873-4ecc-901a-531e96ed3291", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "D25C0E94-A64A-4537-B56E-8840E806F971", 0, "b8fdaca6-b7a2-4cb6-a963-8d1a80f542e0", "denis_loko@mail.ru", true, false, null, "DENIS_LOKO@MAIL.RU", "ADMIN", "AQAAAAEAACcQAAAAEP19NVobAg4pbEy1wWIW5BckyJdKnENWjjM7QvdOx5zzgf2dtu7t0jnfPb8WeOogpQ==", null, false, "", false, "Admin" });
+                values: new object[] { "D25C0E94-A64A-4537-B56E-8840E806F971", 0, "b8fdaca6-b7a2-4cb6-a963-8d1a80f542e0", "denis_loko@mail.ru", true, false, null, "DENIS_LOKO@MAIL.RU", "ADMIN", "AQAAAAEAACcQAAAAEP19NVobAg4pbEy1wWIW5BckyJdKnENWjjM7QvdOx5zzgf2dtu7t0jnfPb8WeOogpQ==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "TextFields",

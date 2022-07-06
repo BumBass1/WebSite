@@ -11,26 +11,26 @@ namespace WebSite11.Domain.Entities
         protected EntityBase() => DateAdded = DateTime.UtcNow;
 
         [Required]
-        public Guid Id { get; set; } // свойство Id (обязательная)
+        public Guid Id { get; set; }
 
-        [Display(Name = "Название (заголовок)")] 
+        [Display(Name = "Название (заголовок)")]
         public virtual string Title { get; set; }
 
-        [Display(Name = "Краткое описание)")]
+        [Display(Name = "Краткое описание")]
         public virtual string Subtitle { get; set; }
 
         [Display(Name = "Полное описание")]
         public virtual string Text { get; set; }
 
         [Display(Name = "Титульная картинка")]
-        public virtual string TitleImagePage { get; set; }
+        public virtual string TitleImagePath { get; set; }
 
         [Display(Name = "SEO метатег Title")]
         public string MetaTitle { get; set; }
 
         [Display(Name = "SEO метатег Description")]
-        public  string MetaDescription { get; set; }
-            
+        public string MetaDescription { get; set; }
+
         [Display(Name = "SEO метатег Keywords")]
         public string MetaKeywords { get; set; }
 
